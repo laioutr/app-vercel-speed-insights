@@ -17,6 +17,21 @@ See [laioutr.com](https://laioutr.com) for more information about Laioutr.
 - **Nuxt integration**: Ships as a Nuxt module used by Laioutr Frontend.
 - **Zero-config**: No need to configure anything. Install the app and see the insights in your dashboard.
 
+## Configuration
+
+You can configure the module by adding the following to your `nuxt.config.ts` file:
+
+```ts
+export default defineNuxtConfig({
+  modules: ["@laioutr/app-vercel-speed-insights"],
+  "@laioutr/app-vercel-speed-insights": {
+    sampleRate: 0.5, // 50%
+  },
+});
+```
+
+- `sampleRate`: The sample rate for the Speed Insights. Defaults to `1` (100%).
+
 ## Quick Setup
 
 Before installing dependencies, you need to create a copy of the `.npmrc.config` file called `.npmrc` and fill in the `NPM_LAIOUTR_TOKEN` with your npm token. You can find this token in your [project settings](https://cockpit.laioutr.cloud/o/_/p/_/settings).

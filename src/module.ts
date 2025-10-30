@@ -11,12 +11,16 @@ import { registerLaioutrApp } from "@laioutr-core/kit";
 /**
  * The options the module adds to the nuxt.config.ts.
  */
-export interface ModuleOptions {}
+export interface ModuleOptions {
+  sampleRate?: number;
+}
 
 /**
  * The config the module adds to nuxt.runtimeConfig.public['@laioutr/app-vercel-speed-insights']
  */
-export interface RuntimeConfigModulePublic {}
+export interface RuntimeConfigModulePublic {
+  sampleRate?: number;
+}
 
 /**
  * The config the module adds to nuxt.runtimeConfig['@laioutr/app-vercel-speed-insights']
@@ -30,8 +34,10 @@ export default defineNuxtModule<ModuleOptions>({
     configKey: name, // configKey must match package name
   },
   // Default configuration options of the Nuxt module
-  defaults: {},
-  async setup(_options, nuxt) {
+  defaults: {
+    sampleRate: 1, // 100%
+  },
+  async setup(options, nuxt) {
     const { resolve } = createResolver(import.meta.url);
     const resolveRuntimeModule = (path: string) => resolve("./runtime", path);
 
@@ -41,11 +47,11 @@ export default defineNuxtModule<ModuleOptions>({
     // These two statements can be removed if you don't provide a runtime config
     nuxt.options.runtimeConfig[name] = defu(
       nuxt.options.runtimeConfig[name] as Parameters<typeof defu>[0],
-      _options
+      options
     );
     nuxt.options.runtimeConfig.public[name] = defu(
       nuxt.options.runtimeConfig.public[name] as Parameters<typeof defu>[0],
-      _options
+      { sampleRate: options.sampleRate }
     );
 
     await registerLaioutrApp({
