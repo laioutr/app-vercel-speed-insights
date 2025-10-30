@@ -12,10 +12,10 @@ declare module "vue" {
 
 declare module "@nuxt/schema" {
   interface PublicRuntimeConfig {
-    ["@laioutr-app/commercetools"]: RuntimeConfigModulePublic;
+    ["@laioutr/app-vercel-speed-insights"]: RuntimeConfigModulePublic;
   }
   interface RuntimeConfig {
-    ["@laioutr-app/commercetools"]: RuntimeConfigModulePrivate;
+    ["@laioutr/app-vercel-speed-insights"]: RuntimeConfigModulePrivate;
   }
 }
 

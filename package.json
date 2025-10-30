@@ -1,9 +1,14 @@
 {
-  "name": "@laioutr-app/vercel-speed-insights",
+  "name": "@laioutr/app-vercel-speed-insights",
   "version": "0.1.0",
   "description": "Vercel Speed Insights for Laioutr",
   "repository": "laioutr/app-vercel-speed-insights",
   "license": "MIT",
+  "keywords": [
+    "laioutr",
+    "laioutr-app",
+    "vercel"
+  ],
   "type": "module",
   "exports": {
     ".": {

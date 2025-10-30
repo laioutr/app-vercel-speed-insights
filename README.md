@@ -5,7 +5,9 @@
 [![License][license-src]][license-href]
 [![Nuxt][nuxt-src]][nuxt-href]
 
-Purpose: Integrate Vercel's Speed Insights into Laioutr.
+Integrate Vercel's Speed Insights into [Laioutr](https://laioutr.com).
+
+See [laioutr.com](https://laioutr.com) for more information about Laioutr.
 
 - [✨ &nbsp;Release Notes](/CHANGELOG.md)
 
@@ -23,7 +25,7 @@ Before installing dependencies, you need to create a copy of the `.npmrc.config`
 - `npx @laioutr/cli project fetch-rc -p <organization slug>/<project slug> -s <project secret key>` - This will load the `laioutrrc.json` file with the current remote project configuration.
 - `pnpm dev`
 
-That's it! You can now use the Vercel Speed Insights app in your Laioutr Frontend ✨
+That's it! You can now use the Vercel Speed Insights app in your [Laioutr Frontend](https://laioutr.com) ✨
 
 You can find a thorough guide on getting started with Laioutr development in our [developer guide](https://docs.laioutr.io/developer-guide/setup).
 
@@ -51,10 +53,10 @@ Follow the [setup guide](https://docs.laioutr.io/developer-guide/setup) to get s
 <!-- Badges -->
 
 [npm-version-src]: https://img.shields.io/npm/v/%40laioutr-app%2Fvercel-speed-insights/latest.svg?style=flat&colorA=020420&colorB=00DC82
-[npm-version-href]: https://npmjs.com/package/@laioutr-app/vercel-speed-insights
+[npm-version-href]: https://npmjs.com/package/@laioutr/app-vercel-speed-insights
 [npm-downloads-src]: https://img.shields.io/npm/dm/%40laioutr-app%2Fvercel-speed-insights.svg?style=flat&colorA=020420&colorB=00DC82
-[npm-downloads-href]: https://npm.chart.dev/@laioutr-app/vercel-speed-insights
+[npm-downloads-href]: https://npm.chart.dev/@laioutr/app-vercel-speed-insights
 [license-src]: https://img.shields.io/npm/l/%40laioutr-app%2Fvercel-speed-insights.svg?style=flat&colorA=020420&colorB=00DC82
-[license-href]: https://npmjs.com/package/@laioutr-app/vercel-speed-insights
+[license-href]: https://npmjs.com/package/@laioutr/app-vercel-speed-insights
 [nuxt-src]: https://img.shields.io/badge/Nuxt-020420?logo=nuxt.js
 [nuxt-href]: https://nuxt.com

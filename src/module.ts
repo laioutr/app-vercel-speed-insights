@@ -14,12 +14,12 @@ import { registerLaioutrApp } from "@laioutr-core/kit";
 export interface ModuleOptions {}
 
 /**
- * The config the module adds to nuxt.runtimeConfig.public['@laioutr-app/vercel-speed-insights']
+ * The config the module adds to nuxt.runtimeConfig.public['@laioutr/app-vercel-speed-insights']
  */
 export interface RuntimeConfigModulePublic {}
 
 /**
- * The config the module adds to nuxt.runtimeConfig['@laioutr-app/vercel-speed-insights']
+ * The config the module adds to nuxt.runtimeConfig['@laioutr/app-vercel-speed-insights']
  */
 export interface RuntimeConfigModulePrivate extends ModuleOptions {}
 
