@@ -39,18 +39,18 @@
     "test:types": "vue-tsc --noEmit && cd playground && vue-tsc --noEmit"
   },
   "dependencies": {
-    "@laioutr-core/frontend-core": "^0.20.1",
+    "@laioutr-core/frontend-core": "^0.27.2",
     "@nuxt/kit": "3.16.2",
     "@pinia/colada": "0.17.1",
     "@pinia/colada-nuxt": "0.2.1",
-    "@vercel/speed-insights": "^1.2.0",
+    "@vercel/speed-insights": "^2.0.0",
     "@vueuse/core": "13.1.0",
     "pinia": "3.0.2",
     "zod": "3.25.61"
   },
   "devDependencies": {
     "playwright-core": "^1.56.1",
-    "@laioutr/logger": "^0.4.0",
+    "@laioutr/logger": "^0.5.1",
     "@nuxt/devtools": "^2.6.3",
     "@nuxt/devtools-ui-kit": "2.5.0",
     "@nuxt/eslint-config": "^1.9.0",

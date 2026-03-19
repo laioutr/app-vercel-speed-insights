@@ -2,7 +2,7 @@ import {
   defineNuxtModule,
   createResolver,
   installModule,
-  addComponent,
+  addPlugin,
 } from "@nuxt/kit";
 import { defu } from "defu";
 import { name, version } from "../package.json";
@@ -47,25 +47,21 @@ export default defineNuxtModule<ModuleOptions>({
     // These two statements can be removed if you don't provide a runtime config
     nuxt.options.runtimeConfig[name] = defu(
       nuxt.options.runtimeConfig[name] as Parameters<typeof defu>[0],
-      options
+      options,
     );
     nuxt.options.runtimeConfig.public[name] = defu(
       nuxt.options.runtimeConfig.public[name] as Parameters<typeof defu>[0],
-      { sampleRate: options.sampleRate }
+      { sampleRate: options.sampleRate },
     );
 
     await registerLaioutrApp({
       name,
       version,
-      pageWrapper: ["VercelSpeedInsightsWrapper"],
     });
 
-    addComponent({
-      filePath: resolveRuntimeModule(
-        "app/components/VercelSpeedInsightsWrapper.vue"
-      ),
-      name: "VercelSpeedInsightsWrapper",
-      global: true,
+    addPlugin({
+      src: resolveRuntimeModule("app/plugins/speed-insights.client"),
+      mode: "client",
     });
 
     // Install peer-dependency modules only on prepare-step.
