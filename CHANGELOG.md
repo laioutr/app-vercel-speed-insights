@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.1.3
+
+[compare changes](https://github.com/laioutr/app-vercel-speed-insights/compare/v0.1.2...v0.1.3)
+
+### 🏡 Chore
+
+- Update vercel speed-insights to v2.0.0 ([50ab666](https://github.com/laioutr/app-vercel-speed-insights/commit/50ab666))
+
+### ❤️ Contributors
+
+- Sebastian Langer <sebastian.langer@laioutr.com>
+
 ## v0.1.2
 
 [compare changes](https://github.com/laioutr/app-vercel-speed-insights/compare/v0.1.1...v0.1.2)
