@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.1.4
+
+[compare changes](https://github.com/laioutr/app-vercel-speed-insights/compare/v0.1.3...v0.1.4)
+
+### 🩹 Fixes
+
+- Use nuxt-sdk instead of raw api ([13b0ab2](https://github.com/laioutr/app-vercel-speed-insights/commit/13b0ab2))
+
+### ❤️ Contributors
+
+- Sebastian Langer <sebastian.langer@laioutr.com>
+
 ## v0.1.3
 
 [compare changes](https://github.com/laioutr/app-vercel-speed-insights/compare/v0.1.2...v0.1.3)
