@@ -43,7 +43,12 @@
     "@vercel/speed-insights": "^2.0.0"
   },
   "devDependencies": {
+    "@pinia/colada": "0.17.1",
+    "@pinia/colada-nuxt": "0.2.1",
+    "@vueuse/core": "13.1.0",
+    "pinia": "3.0.2",
     "playwright-core": "^1.56.1",
+    "zod": "3.25.61",
     "@laioutr/logger": "^0.5.1",
     "@nuxt/devtools": "^2.6.3",
     "@nuxt/eslint-config": "^1.9.0",
