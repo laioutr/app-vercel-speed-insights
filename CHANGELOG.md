@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.1.5
+
+[compare changes](https://github.com/laioutr/app-vercel-speed-insights/compare/v0.1.4...v0.1.5)
+
+### 🏡 Chore
+
+- Update peer-dependency range ([23666cc](https://github.com/laioutr/app-vercel-speed-insights/commit/23666cc))
+
+### ❤️ Contributors
+
+- Sebastian Langer <sebastian.langer@laioutr.com>
+
 ## v0.1.4
 
 [compare changes](https://github.com/laioutr/app-vercel-speed-insights/compare/v0.1.3...v0.1.4)
