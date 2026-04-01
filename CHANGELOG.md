@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.1.6
+
+[compare changes](https://github.com/laioutr/app-vercel-speed-insights/compare/v0.1.5...v0.1.6)
+
+### 🏡 Chore
+
+- Add playground-dependencies as dev-dependency ([3663cdf](https://github.com/laioutr/app-vercel-speed-insights/commit/3663cdf))
+
+### ❤️ Contributors
+
+- Sebastian Langer <sebastian.langer@laioutr.com>
+
 ## v0.1.5
 
 [compare changes](https://github.com/laioutr/app-vercel-speed-insights/compare/v0.1.4...v0.1.5)
